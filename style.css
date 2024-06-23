@@ -1,0 +1,252 @@
+* {
+  font-family: "Telex", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url(fonts/Alegreya/Alegreya-VariableFont_wght.ttf) format("truetype");
+}
+
+.scrollable-content {
+  scrollbar-width: none;
+}
+
+@media only screen and (min-width: 992px) {
+  #how-to-use
+  {
+    display: none;
+  }
+}
+
+.spaces-dropdown,
+.ourteam-button,
+.search-btn,
+.distances-button {
+  text-align: center;
+  align-items: center;
+}
+.ourteam-button :hover
+{
+  border : 1px solid chartreuse;
+  background-color: #789461;
+  border-radius: 5px;
+  transition:0.5s;
+  
+}
+.spaces-dropdown :hover{
+  
+  border : 1px solid chartreuse;
+  background-color: #789461;
+  border-radius: 5px;
+  transition:0.5s;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+nav {
+  /* background-color: #ff5100; */
+  /*     background-image: linear-gradient(#ff4d20,#ff9666); */
+  width: 100%;
+}
+
+iframe {
+  margin: auto;
+  height: 100vh;
+  overflow: scroll;
+  position: relative;
+  top: 4vh;
+
+  width: 100vw;
+
+
+}
+
+:root {
+  --direction: -45deg;
+}
+
+
+
+main {
+  position: relative;
+}
+
+/* .anim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: none;
+  }
+  
+  .background {
+    background-image: url(images/iiitdm-logo.jpeg);
+    
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    mask-image: linear-gradient(var(--direction), rgba(0,0,0,1) 40%, rgba(0,0,0,0) 60%);
+    mask-position: 50% 50%;
+    margin-left: 30px;
+}
+
+.foreground {
+    background-image: url(images/iiitdm-logo.jpeg);
+    background-size: auto;
+    background-position: right;
+    background-repeat: no-repeat;
+    mask-image: linear-gradient(var(--direction), rgba(0,0,0,1) 40%, rgba(0,0,0,0) 60%);
+    mask-position: 50% 50%;
+    margin-right: 30px;
+  } */
+
+.searchInput {
+  display: flex;
+  flex-direction: row;
+}
+
+/* form
+{
+  displ
+}
+ */
+
+/* Dropdown Button  and search button here*/
+
+
+.dropbtn {
+  background-color: #789461;
+  border-radius: 7px;
+  color: white;
+  padding: 10px;
+  width: 130px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropbtn:hover,
+.dropbtn:focus {
+  border:1px solid chartreuse;
+  transition: 0.5s;
+  background-color: #b4bbac;
+  color: black;
+}
+
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('icons8-search.gif');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  max-height: 600px;
+  overflow: hidden scroll;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.ourteam,
+.distances ,.spaces-button{
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+h1 {
+  font-family: "Alegreya", sans-serif;
+}
+
+.dropdown-content a:hover {
+  background-color: #777070
+}
+
+.show {
+  display: block;
+}
+
+/* code for search ends here */
+.iiitdmk-logo {
+  height: 50px;
+  margin: 0 20px;
+}
+
+.shiny-button {
+  border: none;
+  border-radius: 1px;
+  padding: 5px 20px;
+  background: linear-gradient(to left, #027c39, #04AA6D);
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px
+  }
+
+  20% {
+    left: 100%
+  }
+
+  100% {
+    left: 100%
+  }
+}
+
+.shiny-button:hover::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, .8),
+      rgba(255, 255, 255, 0) 70%);
+  top: 0;
+  left: -100px;
+  animation: shine 3s infinite linear;
+  /* Animation */
+}
